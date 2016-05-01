@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>keyboard</title>
+    <style>
+      body {
+        padding: 3em;
+        padding-top: 4em;
+        color: green;
+        background: black;
+        font-family: lekton;
+      }
+      a{
+        color: green;
+      }
+    </style>
+    <script src="scripts/p5.min.js" type="text/javascript"></script>
+    <script src="scripts/p5.dom.js" type="text/javascript"></script>
+    <script src="scripts/p5.sound.js" type="text/javascript"></script>
+    <script src="scripts/keyboard.js" type="text/javascript"></script>
+    <script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/lekton:n4:default.js" type="text/javascript"></script>
+    <script>
+      function showDiv(d) {
+        var e = document.getElementById(d);
+        if(e.style.display == 'block')
+          e.style.display = 'none';
+        else
+          e.style.display = 'block';
+}
+    </script>
+  </head>
+  <body>
+    <p><a href="javascript:showDiv('desc')" >description</a></p>
+    <p id="desc" style="display:none;">The keys for natural notes are the home row (the asdf etc. row on your keyboard), the keys for sharps/flats are some of the ones above them!
+    Use the up and down arrow keys to control the oscillator's decay time, or use 1 to set it to 0.05 seconds or 2 to set it to a second.</p>
+    <p id="user_information"></p>
+  </body>
+</html>
